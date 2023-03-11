@@ -1,0 +1,213 @@
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins:wght@100;300;500&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+    font-family: Comfortaa, 'Courier New', Courier, monospace;
+
+}
+
+body {
+    background-color: #adf4b6fb;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo {
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.header .logo img {
+    width: 25%;
+    height: 15%;
+}
+
+.header .menu {
+    display: flex;
+    width: 30em;
+    height: 100%;
+    justify-content: space-between;
+    margin-right: 2rem;
+    align-items: center;
+    list-style: none;
+
+}
+
+.header .menu li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.header .menu li a:hover {
+    background-color: #ba589b;
+}
+
+.info {
+    display: grid;
+    grid-template-rows: 80px 50px 25px;
+}
+
+.info1 {
+    margin-left: 2em;
+    margin-right: 19em;
+}
+
+.info2 {
+    margin-left: 8em;
+    margin-right: 14em;
+
+}
+
+.info3 {
+    justify-self: end;
+    margin-right: 1em;
+    margin-top: 10em;
+}
+
+
+
+
+
+/* ---------------------------- underline ---------------------------------- */
+
+
+/* falta adicionar a conversão do menu para listras aplicando responsividade */
+@media screen and (max-width: 1200px) {
+
+    .header .menu {
+        overflow: hidden;
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header .logo {
+        display: flex;
+       justify-content: center;
+       margin: 0 auto;
+
+    }
+
+    .container .texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .container .historia {
+        color: rgb(38, 31, 31)
+    }
+
+    .container .cadastro #enter {
+        align-self: center;
+    }
+
+    .info {
+        display: grid;
+        grid-template-rows: 80px 50px 25px;
+    }
+    
+    .info1 {
+        margin-left: 2em;
+        margin-right: 19em;
+    }
+    
+    .info2 {
+        margin-left: 8em;
+        margin-right: 14em;
+        margin-top: 2em ;
+    
+    }
+    
+    .info3 {
+        justify-self: end;
+        margin-right: 1em;
+        margin-top: 5em;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info3 {
+        margin-top: 1em;
+    }
+
+    .info1 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .info2 {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0 ;
+    }   
+}
+
+@media screen and (max-width: 780px) {
+
+    .header .logo {
+        width: 35%;
+        height: 20%;
+        display: flex;
+        align-self: center;
+
+    }
+    
+}
+
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 14px;
+}
+
+.rodape {
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    align-items: end;
+    margin-top: 11em;
+
+}
+
+.rodape .textoRodape {
+    font-size: 8px;
+}

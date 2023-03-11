@@ -1,0 +1,217 @@
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins:wght@100;300;500&display=swap);
+
+/* padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+    font-family: Comfortaa, 'Courier New', Courier, monospace;
+
+}
+
+body {
+    background-color: #adf4b6fb;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo {
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.header .logo img {
+    width: 25%;
+    height: 15%;
+}
+
+.header .menu {
+    display: flex;
+    width: 30em;
+    height: 100%;
+    justify-content: space-between;
+    margin-right: 2rem;
+    align-items: center;
+    list-style: none;
+
+}
+
+.header .menu li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.header .menu li a:hover {
+    background-color: #ba589b;
+}
+
+/* padrão */
+
+
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    margin: 0 2em;
+}
+
+.cards .card {
+    background-color: #86ebab;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 38px;
+
+}
+.cards .card .icon {
+    align-content: center;
+}
+.cards .card .icon img {
+    width: 6em;
+    height: 8sem;    
+}
+.cards .card .icon1 {
+    height: 120px;
+    
+}
+
+
+.cards .card .icon .text {
+    display: flex;
+    flex-direction: row;
+}
+
+main.cards section.card h3 {
+    margin: 16px 0;
+}
+
+main.cards section.card span {
+    font-weight: 400;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 12px;
+}
+
+main.cards section.card span.preco-de {
+    text-decoration: line-through;
+}
+
+main.cards section.card span.preco-por {
+    color: red;
+    font-size: 100%;
+    font-weight: 600;
+
+}
+
+main.cards section.card span.preco-de{
+    font-weight: 350;
+}
+
+main.cards section.card button {
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    border-radius: 12px;
+    border: 25%;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 800;
+
+    background: linear-gradient(to right, rgba(91, 5, 125, 0.579), rgba(189, 116, 217, 0.579));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .header .menu {
+        overflow: hidden;
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header .logo {
+        display: flex;
+       justify-content: center;
+       margin: 0 auto;
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .header .logo {
+        width: 35%;
+        height: 20%;
+        display: flex;
+        align-self: center;
+    
+    }
+
+    .cards{
+        display: grid;
+        grid-template-rows: auto;
+        gap: 10px;
+        margin: 0 2em;
+    }
+
+}
+
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 14px;
+}
+
+.rodape {
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    align-items: end;
+
+}
+
+.rodape .textoRodape {
+    font-size: 8px;
+}

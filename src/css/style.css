@@ -1,0 +1,234 @@
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins:wght@100;300;500&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+    font-family: Comfortaa, 'Courier New', Courier, monospace;
+
+}
+
+body {
+    background-color: #adf4b6fb;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo {
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.header .logo img {
+    width: 25%;
+    height: 15%;
+}
+
+.header .menu {
+    display: flex;
+    width: 30em;
+    height: 100%;
+    justify-content: space-between;
+    margin-right: 2rem;
+    align-items: center;
+    list-style: none;
+
+}
+
+.header .menu li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.header .menu li a:hover {
+    background-color: #ba589b;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.container .texto {
+    padding: 1rem 2rem;
+}
+
+.container .texto h2 {
+    font-size: 50px;
+    margin: 0px 5px;
+    padding: 5px 0 0 0;
+    color: #fff;
+
+}
+
+.container .texto h2 span {
+    color: violet;
+    font-weight: bold;
+
+}
+
+.container .historia {
+    justify-content: baseline;
+    font-size: small;
+    font-weight: bold;
+    max-width: 46%;
+    color: #a0e8a8fb;
+    text-align: justify;
+}
+
+.container .cadastro {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+
+}
+
+.container .cadastro [type="submit"] {
+    height: 50px;
+    width: 50%;
+    background-color: violet;
+    color: #415;
+    font-weight: bold;
+}
+
+.container .cadastro [type="submit"]:hover {
+    cursor: pointer;
+}
+
+.container .cadastro input {
+    margin-top: 15px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+}
+
+.videoDeFundo {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.videoDeFundo .video {
+    height: 100vh;
+}
+
+.videoDeFundo::after {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 12%, rgba(205, 73, 181, 0.6354713760504201) 50%, rgba(3, 1, 29, 1) 88%);
+}
+
+/* ---------------------------- underline ---------------------------------- */
+
+
+/* falta adicionar a conversão do menu para listras aplicando responsividade */
+@media screen and (max-width: 1200px) {
+
+    .header .menu {
+        overflow: hidden;
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header .logo {
+        display: flex;
+       justify-content: center;
+       margin: 0 auto;
+
+    }
+
+    .container .texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .container .historia {
+        color: rgb(38, 31, 31)
+    }
+
+    .container .cadastro #enter {
+        align-self: center;
+    }
+
+    .videoDeFundo,
+    .video {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+
+    .header .logo {
+        width: 35%;
+        height: 20%;
+        display: flex;
+        align-self: center;
+
+    }
+
+    .container .texto h2 {
+        font-size: 24px;
+        margin-bottom: 1em;
+    }
+    
+}
+
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 14px;
+}
+
+.rodape {
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    align-items: end;
+
+}
+
+.rodape .textoRodape {
+    font-size: 8px;
+}
