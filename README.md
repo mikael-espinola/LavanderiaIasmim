@@ -10,7 +10,7 @@ Lavanderia Iasmim é uma aplicação Front-End, web e mobile, com intuito de tre
 A aplicação consiste na disponibilização de uma landpage para cadastro na NewsLatter, verificações dos serviçso disponíveis além de uma aba para gerenciamento dos serviços prestados. 
 
 ## Layout web
-![Web 1](https://github.com/mikael-espinola/arquivosreadme/blob/main/img-LI-2-0/print1-landpage.png)
+![Web 1](https://github.com/mikael-espinola/arquivosreadme/blob/main/img-LI-2-0/print-1-landpage.png)
 
 # Tecnologias utilizadas
 ## Front end
