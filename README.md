@@ -16,6 +16,15 @@ A aplicação consiste na disponibilização de uma landpage para cadastro na Ne
 ## Front end
 - HTML / CSS / JS
 
+# Próximas atualizações
+
++ Responsividade com Bootstrap
++ Correção de bugs na sub aba de Serviços
++ Lançamento em Host.
+
+
+
+
 # Autor
 
 Mikael da Costa Espínola
