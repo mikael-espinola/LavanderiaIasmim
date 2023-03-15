@@ -13,8 +13,11 @@ A aplicação consiste na disponibilização de uma landpage para cadastro na Ne
 ![Web 1](https://github.com/mikael-espinola/arquivosreadme/blob/main/img-LI-2-0/print-1-landpage.png)
 
 # Tecnologias utilizadas
+
 ## Front end
-- HTML / CSS / JS
+- HTML 
+- CSS 
+- JS
 
 # Próximas atualizações
 
